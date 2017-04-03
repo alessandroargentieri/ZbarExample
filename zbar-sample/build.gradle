@@ -1,0 +1,16 @@
+apply plugin: 'com.android.application'
+
+dependencies {
+    //compile project(":zbar")
+    compile supportLibraryDependency
+    compile 'me.dm7.barcodescanner:zbar:1.9'
+    compile 'com.android.support:appcompat-v7:24.1.1'
+    compile 'com.android.support:design:24.1.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+}
+
+android {
+    defaultConfig {
+        applicationId "${project.group}.zbar.sample"
+    }
+}
